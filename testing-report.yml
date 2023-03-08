@@ -47,5 +47,6 @@
   status: pass
 
 - summary: |
-    Наличие на главной странице кнопки "Logg In"
+     Наличие на главной странице кнопки "Logg In"
   status: fail
+  
