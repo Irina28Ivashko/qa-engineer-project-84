@@ -50,8 +50,4 @@
   - summary: |
     Наличие на главной странице кнопки: Logg In
   status: fail
- ---
- - summary: |
-    Успешное переключение языков.
-  status: fail
- 
+
