@@ -1,100 +1,100 @@
 
 test-cases:
   - summary: |
-    Пользователь может просматривать каталог товаров, фильтруя его
-  status: pass
+      Пользователь может просматривать каталог товаров, фильтруя его
+    status: pass
 
-- summary: |
-    Пользователь должен иметь возможность просматривать товары используя постраничный вывод
-  status: pass
+  - summary: |
+      Пользователь должен иметь возможность просматривать товары используя постраничный вывод
+    status: pass
   
- - summary: |
+  - summary: |
       Пользователь может добавить товар в корзину
-  status: pass
+    status: pass
 
-- summary: |
-    Пользователь может продолжить выбирать товары в каталоге
-  status: pass
+  - summary: |
+      Пользователь может продолжить выбирать товары в каталоге
+    status: pass
 
-- summary: |
+  - summary: |
      На странице корзины пользователь может удалить товар из корзины
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Пользователь может продолжить выбирать товары в каталоге после удаления товара в корзине
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность искать товары по ключевому слову
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность искать товары по категории
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность фильтровать товары по цене
-  status: pass
+    status: pass
   
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность фильтровать товары по цвету
-  status: fail
+    status: fail
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность фильтровать товары по размеру
-  status: fail
+    status: fail
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность просматривать товары
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность просматривать подробную информацию о товаре
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность просматривать содержимое корзины
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Наличие на главной странице кнопки "Logg In"
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
      Проверка смены языка в интернет магазине
-  status: fail
+    status: fail
   
-- summary: |
+  - summary: |
      Проверить в фильтре "Price" отрицательное значение
-  status: fail
+    status: fail
   
-- summary: |
+  - summary: |
      Переход к товарам одной категории по хештегу на странице товара
-  status: pass
+    status: pass
   
-- summary: |
+  - summary: |
      Веб-сайт корректно отображается на мобильных устройствах
-  status: pass
+    status: pass
   
-- summary: |
+  - summary: |
      Проверка совместимость с браузерами
-  status: pass
+    status: pass
   
-- summary: |
+  - summary: |
      Изменение количества товаров в корзине
-  status: fail
+    status: fail
   
-- summary: |
+  - summary: |
      Удаление одной единицы товара из корзины
-  status: pass
+    status: pass
   
-- summary: |
+  - summary: |
      Пользователь должен иметь возможность фильтровать товары со скидкой
-  status: fail
+    status: fail
   
-- summary: |
+  - summary: |
      Поиск товара по ключевому слову или категории
-  status: fail
+    status: fail
 
 
 bugreports:
@@ -112,7 +112,7 @@ bugreports:
     actual-result: |
      Фильтр содержит только цену
     
-- summary: |
+  - summary: |
      При вводе названия несуществующего в конкретной категории товара отображаются случайные товары
     environment: |
      Vivaldi	5.7.2921.60 (Stable channel) (64 бита) 
@@ -125,9 +125,9 @@ bugreports:
     expected-result: |
      На странице сайта появится сообщение "Nothing found!"
     actual-result: |
-     На странице сайта тображаются случайные товары из разных категорий. Приложен скиншот image.png.
+     На странице сайта тображаются случайные товары из разных категорий. Приложен скиншот screenshot_1.png.
      
-- summary: |
+  - summary: |
      При смене языка на русский, описание товара в карточке отображается на английском языке
     environment: |
      Vivaldi	5.7.2921.60 (Stable channel) (64 бита) 
@@ -141,16 +141,16 @@ bugreports:
     actual-result: |
      В карточке товара описание на английском языке.
      
-- summary: |
-    При нажатии на карточку товара не открывается страница с подробным описанием
-  environment: |
-    Vivaldi	5.7.2921.60 (Stable channel) (64 бита) 
-    Версия	b442729c9d1d213fb300493d3f89eba4987bd132
-    ОС Windows 10 Version 22H2 (Build 19045.2486)
-  steps-to-reproduce: |
-    - Открыть главную страницу https://hexlet-products-store.vercel.app/
-    - Нажать на любое место в карточке товара из каталога кроме изображения товара и кнопки "В корзину"
-  expected-result: |
-    Откроется карточка товара с подробной информацией о товаре
-  actual-result: |
-    Карточка товара открывается только при нажатии на фотографию
+  - summary: |
+      При нажатии на карточку товара не открывается страница с подробным описанием
+    environment: |
+      Vivaldi	5.7.2921.60 (Stable channel) (64 бита) 
+      Версия	b442729c9d1d213fb300493d3f89eba4987bd132
+      ОС Windows 10 Version 22H2 (Build 19045.2486)
+    steps-to-reproduce: |
+      - Открыть главную страницу https://hexlet-products-store.vercel.app/
+      - Нажать на любое место в карточке товара из каталога кроме изображения товара и кнопки "В корзину"
+    expected-result: |
+      Откроется карточка товара с подробной информацией о товаре
+    actual-result: |
+      Карточка товара открывается только при нажатии на фотографию
